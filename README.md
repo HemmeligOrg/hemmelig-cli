@@ -14,6 +14,12 @@ With this CLI you can use the API from [https://hemmelig.app](https://hemmelig.a
 Install the binary (windows, osx, linux) from <https://github.com/HemmeligOrg/hemmelig-cli/releases>, or go directly to the build the binary manually step.
 
 ```bash
+# Example
+cat your_secret_file.txt | hemmelig --password=cantguessthislol
+# The secret URL: https://hemmelig.app/secret/0-ii79E5tViCv6OBPEmzC/talented_RU4NfXNvxTLJAf1R_QFtp
+```
+
+```bash
 NAME:
    [he`m:(ə)li] - Create a secret URL directly from your CLI.
 
@@ -32,10 +38,6 @@ GLOBAL OPTIONS:
 
 COPYRIGHT:
    (c) 2022 Hemmelig.app
-
-# Example
-cat your_secret_file.txt | hemmelig --password=cantguessthislol
-# The secret URL: https://hemmelig.app/secret/0-ii79E5tViCv6OBPEmzC/talented_RU4NfXNvxTLJAf1R_QFtp
 ```
 
 ## Get it up and running [DEV]
