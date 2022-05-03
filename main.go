@@ -5,7 +5,6 @@ import (
 	"fmt"
 	"log"
 	"os"
-	"time"
 
 	"github.com/HemmeligOrg/hemmelig-cli/core"
 	"github.com/urfave/cli/v2"
@@ -50,14 +49,12 @@ func createSecret(c *cli.Context) error {
 }
 
 func main() {
-	year, _, _ := time.Now().Date()
-
 	app := &cli.App{
 		Name:      "[he`m:(ə)li]",
 		HelpName:  "hemmelig",
 		Usage:     "Create a secret URL directly from your CLI.",
 		UsageText: "cat your_secret_file.txt | hemmelig --password=cantguessthislol \nOr just pass it as the first argument: hemmelig \"This is my secret\" --password=secret",
-		Copyright: fmt.Sprintf("(c) %d Hemmelig.app", year),
+		Copyright: fmt.Sprintf("(c) %d Hemmelig.app", core.Year()),
 		Flags: []cli.Flag{
 			&cli.StringFlag{
 				Name:    "password",
